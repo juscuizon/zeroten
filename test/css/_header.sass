@@ -1,0 +1,181 @@
+.headerContainer
+	display: flex
+	justify-content: space-between
+	max-height: 150px
+
+	.navigationContainer
+		display: flex
+		flex-direction: column
+		min-height: 80px
+
+
+		.dirContainer
+			display: flex
+			flex-direction: row
+			width: 1355px
+			justify-content: space-around
+			align-items: center
+			margin-bottom: 45px
+			margin-top: 30px
+
+
+			.dir01
+				display: flex
+				flex-direction: row
+				justify-content: center
+				text-align: center
+
+				.logoContainer01
+						margin-right: 30px
+
+				.thumbImage
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+
+					
+
+					.thumb
+						margin-right: 10px
+
+			.dir02
+
+				.data01
+					display: flex
+					align-items: center
+					justify-content: center
+					height: 35px
+
+					.spacer
+						margin-right: 10px
+
+				.data02
+					display: flex
+
+					.spacer01
+						margin-right: 15px
+					
+
+		.menuContainer
+			display: flex
+			flex-direction: column
+			width: 1355px
+			min-height: 70px
+			align-items: center
+			text-align: center
+			justify-content: center
+			background-color: rgba(0, 0, 0, 0.7)
+
+			.eng, .jap
+				display: flex
+				justify-content: center
+				li
+					margin-right: 110px
+					list-style-type: none
+					display: inline-block
+					a
+						text-decoration: none
+
+			.eng
+				a
+					color: #ffffff
+
+			.jap
+				width: 1000px
+				margin-left: -20px
+				li
+					a
+						color: #51595d
+
+			.jap
+				margin-left: 80px
+
+	.mailContainer
+		display: flex
+		flex-direction: column
+		width: 150px
+		height: 150px
+		background: 
+			image:	url("../images/envelope.png")
+		justify-content: center
+		align-items: center
+
+		.bottomSpacer
+			margin-bottom: 20px
+
+	.header-mobile-nav-button
+		display: none
+		background-image: url('../images/hamburger-button.svg')
+		background-repeat: no-repeat
+		width: 50px
+		height: 50px
+		margin-right: 7px
+		margin-top: 10px
+
+	.header-mobile-nav-button.active
+		background-image: url('../images/hamburger-button-active.svg')
+		background-repeat: no-repeat
+		width: 50px
+		height: 50px
+		margin-right: 7px
+		margin-top: 10px
+
+#mobile-navigation
+	display: none
+	transform: translateX(500px)
+	width: 80vw
+	height: 100vh
+	position: absolute
+	right: 0px
+	background-color: #dadada
+
+#mobile-navigation.open
+	transform: translateX(0px)
+
+//Mobile Devices
+@media (min-width: 50px) and (max-width: 500px)
+	.headerContainer
+		width: 100vw
+		border: solid 1px red
+
+		.navigationContainer
+
+
+			.dirContainer
+				width: 200px
+				height: 10px
+				margin-left: -21px
+
+
+				.dir01
+					flex-direction: column
+
+					.logoContainer01
+						display: none
+
+
+					.thumbImage
+						display: none
+
+				.dir02
+					display: none
+
+			.menuContainer
+				display: none
+				.eng, .jap
+					display: none
+
+		.mailContainer
+			width: 82px
+			height: 82px
+
+			.fullscreen
+				display: none
+
+		.header-mobile-nav-button
+			display: flex
+
+	#mobile-navigation
+		display: flex
+
