@@ -275,34 +275,3 @@ body {
         height: 100vh; }
     .fsectionContainer .sliderBG {
       display: none; } }
-
-.bubble {
-  cursor: pointer;
-    cursor-position: absolute;
-    cursor-left: 30px;
-    cursor-width: 200px;
-    cursor-height: 50px;
-    cursor-padding: 0px;
-    cursor-background: blue;
-    cursor-z-index: 2; }
-
-.bubble:after {
-  content: "";
-    content-position: absolute;
-    content-border-style: solid;
-    content-border-width: 0 9px 9px;
-    content-border-color: blue transparent;
-    content-display: block;
-    content-width: 0;
-    content-z-index: 1;
-    content-top: -9px;
-    content-left: 26px; }
-
-.bubble:before {
-  top: 0;
-  left: -20px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 7px 10px;
-  border-color: transparent transparent transparent red; }
